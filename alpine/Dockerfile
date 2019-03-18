@@ -1,4 +1,4 @@
-FROM ruby:2.6.1-alpine3.8 as ruby_base
+FROM ruby:2.5.4-alpine3.8 as ruby_base
 
 FROM node:10.15.1-alpine as node_base
 
@@ -10,8 +10,8 @@ FROM alpine:3.8
 
 COPY --from=ruby_base /usr/local/ /usr/local/
 
-ENV RUBY_MAJOR 2.6
-ENV RUBY_VERSION 2.6.1
+ENV RUBY_MAJOR 2.5
+ENV RUBY_VERSION 2.5.4
 
 RUN set -ex \
 	\
