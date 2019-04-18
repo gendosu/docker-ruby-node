@@ -1,6 +1,6 @@
-FROM ruby:2.6.2-stretch as ruby_base
+FROM ruby:2.6.3-stretch as ruby_base
 
-FROM node:10.15.3-stretch as node_base
+FROM node:10.15.1-stretch as node_base
 
 FROM buildpack-deps:stretch
 
@@ -11,7 +11,7 @@ FROM buildpack-deps:stretch
 COPY --from=ruby_base /usr/local/ /usr/local/
 
 ENV RUBY_MAJOR 2.6
-ENV RUBY_VERSION 2.6.2
+ENV RUBY_VERSION 2.6.3
 
 # install things globally, for great justice
 # and don't create ".bundle" in all our apps
@@ -25,7 +25,7 @@ ENV BUNDLE_PATH="$GEM_HOME" \
 # for Node
 # -------------
 
-ENV NODE_VERSION 10.15.3
+ENV NODE_VERSION 10.15.1
 ENV YARN_VERSION 1.13.0
 
 COPY --from=node_base /usr/local/ /usr/local/
