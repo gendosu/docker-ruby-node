@@ -1,6 +1,6 @@
 FROM ruby:2.6.3-stretch as ruby_base
 
-FROM node:10.15.3-stretch as node_base
+FROM node:8.16.0-stretch as node_base
 
 FROM buildpack-deps:stretch
 
@@ -25,8 +25,8 @@ ENV BUNDLE_PATH="$GEM_HOME" \
 # for Node
 # -------------
 
-ENV NODE_VERSION 10.15.3
-ENV YARN_VERSION 1.13.0
+ENV NODE_VERSION 8.16.0
+ENV YARN_VERSION 1.15.2
 
 COPY --from=node_base /usr/local/ /usr/local/
 COPY --from=node_base /opt/ /opt/
