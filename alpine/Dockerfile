@@ -1,8 +1,8 @@
-FROM ruby:2.6.3-alpine3.8 as ruby_base
+FROM ruby:2.6.3-alpine3.10 as ruby_base
 
 FROM node:12.4.0-alpine as node_base
 
-FROM alpine:3.8
+FROM alpine:3.10
 
 # -------------
 # for Ruby
