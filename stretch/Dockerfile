@@ -1,4 +1,4 @@
-FROM ruby:2.7.1-stretch as ruby_base
+FROM ruby:2.4.10-stretch as ruby_base
 
 FROM node:12.4.0-stretch as node_base
 
@@ -10,8 +10,8 @@ FROM buildpack-deps:stretch
 
 COPY --from=ruby_base /usr/local/ /usr/local/
 
-ENV RUBY_MAJOR 2.6
-ENV RUBY_VERSION 2.7.1
+ENV RUBY_MAJOR 2.4
+ENV RUBY_VERSION 2.4.10
 
 # install things globally, for great justice
 # and don't create ".bundle" in all our apps
