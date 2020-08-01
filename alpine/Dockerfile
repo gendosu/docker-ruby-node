@@ -1,6 +1,6 @@
 FROM ruby:2.7.1-alpine3.10 as ruby_base
 
-FROM node:12.4.0-alpine as node_base
+FROM node:12.6.0-alpine as node_base
 
 FROM alpine:3.10
 
@@ -58,7 +58,7 @@ ENV BUNDLE_PATH="$GEM_HOME" \
 # for Node
 # -------------
 
-ENV NODE_VERSION 12.4.0
+ENV NODE_VERSION 12.6.0
 ENV YARN_VERSION 1.16.0
 
 COPY --from=node_base /usr/local/ /usr/local/
