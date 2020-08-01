@@ -1,4 +1,4 @@
-FROM ruby:2.4.6-stretch as ruby_base
+FROM ruby:2.4.7-stretch as ruby_base
 
 FROM node:8.11.3-stretch as node_base
 

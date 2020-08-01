@@ -1,4 +1,4 @@
-FROM ruby:2.4.6-alpine3.8 as ruby_base
+FROM ruby:2.4.7-alpine3.8 as ruby_base
 
 FROM node:8.11.3-alpine as node_base
 
