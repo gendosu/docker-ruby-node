@@ -1,8 +1,8 @@
-FROM ruby:2.7.1-alpine3.10 as ruby_base
+FROM ruby:2.4.5-alpine3.8 as ruby_base
 
-FROM node:12.18.3-alpine as node_base
+FROM node:8.11.3-alpine as node_base
 
-FROM alpine:3.10
+FROM alpine:3.8
 
 # -------------
 # for Ruby
@@ -10,8 +10,8 @@ FROM alpine:3.10
 
 COPY --from=ruby_base /usr/local/ /usr/local/
 
-ENV RUBY_MAJOR 2.6
-ENV RUBY_VERSION 2.7.1
+ENV RUBY_MAJOR 2.4
+ENV RUBY_VERSION 2.4.5
 
 RUN set -ex \
 	\
@@ -58,8 +58,8 @@ ENV BUNDLE_PATH="$GEM_HOME" \
 # for Node
 # -------------
 
-ENV NODE_VERSION 12.18.3
-ENV YARN_VERSION 1.22.4
+ENV NODE_VERSION 8.11.3
+ENV YARN_VERSION 1.6.0
 
 COPY --from=node_base /usr/local/ /usr/local/
 COPY --from=node_base /opt/ /opt/
