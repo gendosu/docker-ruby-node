@@ -40,6 +40,8 @@
 * `ruby-2.5.6-node-12.1.0-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.5.6-node-12.1.0/alpine/Dockerfile)
 * `ruby-2.5.7-node-12.1.0`, `ruby-2.5.7-node-12.1.0-stretch` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.5.7-node-12.1.0/stretch/Dockerfile)
 * `ruby-2.5.7-node-12.1.0-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.5.7-node-12.1.0/alpine/Dockerfile)
+* `ruby-2.5.8-node-8.11.3`, `ruby-2.5.8-node-8.11.3-stretch` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.5.8-node-8.11.3/stretch/Dockerfile)
+* `ruby-2.5.8-node-8.11.3-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.5.8-node-8.11.3/alpine/Dockerfile)
 * `ruby-2.6.1-node-8.15.0`, `ruby-2.6.1-node-8.15.0-stretch` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.6.1-node-8.15.0/stretch/Dockerfile)
 * `ruby-2.6.1-node-8.15.0-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.6.1-node-8.15.0/alpine/Dockerfile)
 * `ruby-2.6.1-node-8.16.0`, `ruby-2.6.1-node-8.16.0-stretch` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.6.1-node-8.16.0/stretch/Dockerfile)
