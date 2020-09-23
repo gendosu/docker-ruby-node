@@ -59,7 +59,7 @@ ENV BUNDLE_PATH="$GEM_HOME" \
 # -------------
 
 ENV NODE_VERSION 10.1.0
-ENV YARN_VERSION 1.22.4
+ENV YARN_VERSION 1.6.0
 
 COPY --from=node_base /usr/local/ /usr/local/
 COPY --from=node_base /opt/ /opt/
