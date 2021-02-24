@@ -1,8 +1,8 @@
-FROM ruby:2.7.1-buster as ruby_base
+FROM ruby:2.7.2-buster as ruby_base
 
-FROM node:12.18.3-buster as node_base
+FROM node:10.17.0-buster as node_base
 
-FROM buildpack-deps:stretch
+FROM buildpack-deps:buster
 
 # -------------
 # for Ruby
@@ -25,8 +25,8 @@ ENV BUNDLE_PATH="$GEM_HOME" \
 # for Node
 # -------------
 
-ENV NODE_VERSION 12.18.3
-ENV YARN_VERSION 1.22.4
+ENV NODE_VERSION 10.17.0
+ENV YARN_VERSION 1.19.1
 
 COPY --from=node_base /usr/local/ /usr/local/
 COPY --from=node_base /opt/ /opt/
