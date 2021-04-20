@@ -10,7 +10,7 @@ FROM buildpack-deps:stretch
 
 COPY --from=ruby_base /usr/local/ /usr/local/
 
-ENV RUBY_MAJOR 2.6
+ENV RUBY_MAJOR 2.7
 ENV RUBY_VERSION 2.7.1
 
 # install things globally, for great justice
