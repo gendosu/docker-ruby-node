@@ -1,4 +1,4 @@
-FROM ruby:2.7.3-alpine3.10 as ruby_base
+FROM ruby:2.7.3-alpine3.13 as ruby_base
 
 FROM node:12.18.3-alpine as node_base
 
