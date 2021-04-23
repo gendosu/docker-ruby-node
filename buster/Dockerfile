@@ -2,7 +2,7 @@ FROM ruby:3.0.1-buster as ruby_base
 
 FROM node:12.18.3-buster as node_base
 
-FROM buildpack-deps:stretch
+FROM buildpack-deps:buster
 
 # -------------
 # for Ruby
