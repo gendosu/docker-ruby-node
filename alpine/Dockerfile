@@ -2,7 +2,7 @@ FROM ruby:2.7.3-alpine3.13 as ruby_base
 
 FROM node:15.14.0-alpine as node_base
 
-FROM alpine:3.10
+FROM alpine:3.13
 
 # -------------
 # for Ruby
