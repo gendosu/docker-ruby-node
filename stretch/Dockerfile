@@ -1,8 +1,8 @@
-FROM ruby:2.6.6-buster as ruby_base
+FROM ruby:2.6.6-stretch as ruby_base
 
-FROM node:12.22.1-buster as node_base
+FROM node:12.22.1-stretch as node_base
 
-FROM buildpack-deps:buster
+FROM buildpack-deps:stretch
 
 # -------------
 # for Ruby
