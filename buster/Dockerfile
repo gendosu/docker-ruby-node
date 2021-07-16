@@ -1,6 +1,6 @@
 FROM ruby:3.0.2-buster as ruby_base
 
-FROM node:12.18.3-buster as node_base
+FROM node:16.5.0-buster as node_base
 
 FROM buildpack-deps:buster
 
@@ -25,7 +25,7 @@ ENV BUNDLE_PATH="$GEM_HOME" \
 # for Node
 # -------------
 
-ENV NODE_VERSION 15.14.0
+ENV NODE_VERSION 16.5.0
 ENV YARN_VERSION 1.22.5
 
 COPY --from=node_base /usr/local/ /usr/local/
