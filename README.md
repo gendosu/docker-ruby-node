@@ -131,3 +131,5 @@
 * `ruby-2.7.4-node-15.14.0-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-2.7.4-node-15.14.0/alpine/Dockerfile)
 * `ruby-3.0.1-node-15.14.0`, `ruby-3.0.1-node-15.14.0-buster` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-3.0.1-node-15.14.0/buster/Dockerfile)
 * `ruby-3.0.1-node-15.14.0-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-3.0.1-node-15.14.0/alpine/Dockerfile)
+* `ruby-3.0.2-node-15.14.0`, `ruby-3.0.2-node-15.14.0-buster` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-3.0.2-node-15.14.0/buster/Dockerfile)
+* `ruby-3.0.2-node-15.14.0-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-node/blob/ruby-3.0.2-node-15.14.0/alpine/Dockerfile)
