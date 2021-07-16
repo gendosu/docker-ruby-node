@@ -1,8 +1,8 @@
-FROM ruby:3.0.1-buster as ruby_base
+FROM ruby:3.0.2-buster as ruby_base
 
 FROM node:12.18.3-buster as node_base
 
-FROM buildpack-deps:stretch
+FROM buildpack-deps:buster
 
 # -------------
 # for Ruby
@@ -10,8 +10,8 @@ FROM buildpack-deps:stretch
 
 COPY --from=ruby_base /usr/local/ /usr/local/
 
-ENV RUBY_MAJOR 3.0.1
-ENV RUBY_VERSION 3.0.1
+ENV RUBY_MAJOR 3.0
+ENV RUBY_VERSION 3.0.2
 
 # install things globally, for great justice
 # and don't create ".bundle" in all our apps
