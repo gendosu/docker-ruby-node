@@ -25,8 +25,8 @@ ENV BUNDLE_PATH="$GEM_HOME" \
 # for Node
 # -------------
 
-ENV NODE_VERSION 15.14.0
-ENV YARN_VERSION 1.22.5
+ENV NODE_VERSION 12.18.3
+ENV YARN_VERSION 1.22.4
 
 COPY --from=node_base /usr/local/ /usr/local/
 COPY --from=node_base /opt/ /opt/
